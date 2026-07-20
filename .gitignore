@@ -1,0 +1,17 @@
+@"
+node_modules/
+dist/
+.venv-calibon/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.local
+.calibon-patch-backups/
+patches/
+.vite/
+.vite-temp/
+*.log
+Thumbs.db
+.DS_Store
+"@ | Set-Content "C:\Users\musab\Desktop\Github Repos\CalibON\.gitignore"
