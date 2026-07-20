@@ -57,7 +57,9 @@ type CalibrationResponse = {
   };
 };
 
-const API_BASE = (import.meta.env.VITE_CALIBRATION_API_URL as string | undefined)?.replace(/\/$/, "") ?? "";
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL ??
+  "http://127.0.0.1:8000";
 
 const clamp = (value: number, minimum = 0, maximum = 1) =>
   Math.min(maximum, Math.max(minimum, value));
